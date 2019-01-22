@@ -9,7 +9,7 @@
 			"POST"
 		);
 
-		function __construct() {
+		function __construct(IRequest $request) {
 			$this->request = $request;
 		}
 
