@@ -1,0 +1,27 @@
+{
+  "name": "samjones",
+  "version": "1.0.0",
+  "description": "Samjones is a Native PHP MVC CMS web framework, open-source created from scratch by Ludwig Bethnicer and meant to take in building or developed dynamic web application with PHP following the model–view–controller architectural pattern and based on Wordpress.",
+  "main": "index.js",
+  "scripts": {
+    "test": "This PHP MVC CMS framework is intended for those starters or beginners in learing programming and web development using PHP."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludwig2017/samjones.git"
+  },
+  "keywords": [
+    "Native",
+    "PHP",
+    "MVC",
+    "CMS",
+    "web",
+    "framework"
+  ],
+  "author": "Ludwig Bethnicer Cagas-Napigkit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ludwig2017/samjones/issues"
+  },
+  "homepage": "https://github.com/ludwig2017/samjones#readme"
+}
