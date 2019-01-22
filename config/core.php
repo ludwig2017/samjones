@@ -1,1 +1,10 @@
 <?php
+
+	// start php session
+	session_start();
+
+	// set your default time-zone
+	date_default_timezone_set('Asia/Jerusalem');
+
+	// home page url
+	$home_url="http://localhost:3000";
