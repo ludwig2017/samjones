@@ -48,6 +48,7 @@
 			$methodDictionary = $this->{strtolower($this->request->requestMethod)};
 			$formatedRoute = $this->formatRoute($this->request->requestUri);
 			$method = $methodDictionary[$formatedRoute];
+			
 			if(is_null($method)) {
 				$this->defaultRequestHandler();
 				return;
