@@ -28,11 +28,26 @@
 		}
 
 		public function getBody() {
+
 			if($this->requestMethod === "GET") {
 				return;
 			}
 
 			if ($this->requestMethod == "POST") {
+				$result = array();
+
+				foreach($_POST as $key => $value) {
+					$result[$key] = filter_input(INPUT_POST, $key, FILTER_SANITIZE_SPECIAL_CHARS);
+				}
+
+				return $result;
+			}
+
+			if($this->requestUri === "GET") {
+				return;
+			}
+
+			if ($this->requestUri == "POST") {
 				$result = array();
 
 				foreach($_POST as $key => $value) {

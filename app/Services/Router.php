@@ -39,6 +39,7 @@
 
 		private function defaultRequestHandler() {
 			header("{$this->request->serverProtocol} 404 Not Found");
+			require 'shared/views/404.php';
 		}
 
 		/**

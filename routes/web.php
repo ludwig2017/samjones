@@ -3,19 +3,19 @@
 	$router = new Router(new Request);
 
 	$router->get('/', function() {
-		return "<h1>Home: Hello world!!!</h1>";
+		include_once "content/themes/default/index.php";
 	});
 
 	$router->get('/index', function() {
-		return "<h1>Home: Hello world!!!</h1>";
+		include_once "content/themes/default/index.php";
 	});
 
 	$router->get('/home', function() {
-		return "<h1>Home: Hello world!!!</h1>";
+		include_once "content/themes/default/index.php";
 	});
 
 	$router->get('/default', function() {
-		return "<h1>Home: Hello world!!!</h1>";
+		include_once "content/themes/default/index.php";
 	});
 
 	$router->get('/profile', function() {
@@ -28,4 +28,23 @@
 
 	$router->get('/password_encrytpt', function() {
 		include_once "run/password_encrytpt.php";
+	});
+
+	$router->get('/hello', function() {
+		include_once "run/hello.php";
+	});
+
+	$router->get('/cssbootstrap', function() {
+		header("Content-Type: text/css");
+		include_once "bootstrap/3.4.0/css/bootstrap.min.css";
+	});
+
+	$router->get('/jquery', function() {
+		header("Content-Type: text/js");
+		include_once "ajax/libs/jquery/3.3.1/jquery.min.js";
+	});
+
+	$router->get('/jsbootstrap', function() {
+		header("Content-Type: text/js");
+		include_once "bootstrap/3.4.0/js/bootstrap.min.js";
 	});
