@@ -1,7 +1,10 @@
 <div class="jumbotron text-center">
   <h1>Company</h1> 
-  <p>We specialize in blablabla</p> 
-  <form>
+  <p>We specialize in blablabla</p>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <form>
     <div class="input-group">
       <input type="email" class="form-control" size="50" placeholder="Email Address" required>
       <div class="input-group-btn">
@@ -9,6 +12,9 @@
       </div>
     </div>
   </form>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
 </div>
 
 <!-- Container (About Section) -->
@@ -89,21 +95,21 @@
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="paris.jpg" alt="Paris" width="400" height="300">
+        <img src="storage/images/paris.jpg" alt="Paris" width="400" height="300">
         <p><strong>Paris</strong></p>
         <p>Yes, we built Paris</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York" width="400" height="300">
+        <img src="storage/images/newyork.jpg" alt="New York" width="400" height="300">
         <p><strong>New York</strong></p>
         <p>We built New York</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
+        <img src="storage/images/sanfran.jpg" alt="San Francisco" width="400" height="300">
         <p><strong>San Francisco</strong></p>
         <p>Yes, San Fran is ours</p>
       </div>
@@ -241,4 +247,4 @@
 </div>
 
 <!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+<img src="storage/images/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">

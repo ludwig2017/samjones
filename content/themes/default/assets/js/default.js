@@ -1,7 +1,7 @@
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
+$(document).ready(function() {
+	// Add smooth scrolling to all links in navbar + footer link
+	$(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+		// Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
@@ -19,9 +19,9 @@ $(document).ready(function(){
         window.location.hash = hash;
       });
     } // End if
-  });
-  
-  $(window).scroll(function() {
+	});
+
+	$(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
 

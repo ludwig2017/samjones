@@ -5,7 +5,7 @@
 	<p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
 </footer>
 
-<script src="assets/js/default.js"></script>
+<script src="content/themes/default/assets/js/default.js"></script>
 
 </body>
 </html>
