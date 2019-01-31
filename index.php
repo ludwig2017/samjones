@@ -5,4 +5,3 @@
 	include_once "app/Services/Request.php";
 	include_once "app/Services/Router.php";
 	include_once "routes/web.php";
-	// include_once "routes/api.php";

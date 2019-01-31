@@ -1,10 +1,13 @@
 <?php
 
+	// start php session
+	session_start();
+	
 	class UserLogin {
 		if(isset($_POST["login"])) {
 			$field = array(
-				'usercode'     =>     $_POST["username"],
-				'passcode'     =>     $_POST["password"]
+				'usercode'	=>	clean($_POST["username"]),
+				'passcode'	=>	clean($_POST["password"])
 			);
 		}
 	}

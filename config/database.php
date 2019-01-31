@@ -7,15 +7,15 @@
 		private $username = "root";
 		private $password = "";
 
-		public $dbcnn;
+		private $dbcnn;
 
 		public function PDOConnection() {
 
 			$this->dbcnn = null;
 
 			try {
-				$this->conn = new PDO("mysql:host=" . $this->shost . ";dbname=" . $this->dbname, $this->username, $this->password);
-				$this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+				$this->dbcnn = new PDO("mysql:dbname=".$this->dbname.";host=".$this->shost."", "".$this->username."", "".$this->password."");
+				$this->dbcnn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			} catch(PDOException $exception) {
 				echo "Database Connection error: " . $exception->getMessage();
 			}
@@ -25,3 +25,5 @@
 		}
 
 	}
+
+	$dbcretbl = new PDO("mysql:host=localhost;dbname=dbmain", "root", "");
