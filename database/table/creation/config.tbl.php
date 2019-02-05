@@ -9,7 +9,18 @@
 		echo "Database Table: CONFIG; Already exist!<br>";
 	} else {
 		try {
-			$sql = "CREATE TABLE IF NOT EXISTS CONFIG(theme varchar(50) NOT NULL, homepage varchar(50) NOT NULL, favicon text NOT NULL, title varchar(28) NOT NULL);";
+			$sql = "CREATE TABLE IF NOT EXISTS CONFIG(
+				theme varchar(50) NOT NULL, 
+				homepage varchar(50) NOT NULL, 
+				favicon text NOT NULL, 
+				owner text NOT NULL, 
+				pemail text NOT NULL, 
+				mobile varchar(20) NOT NULL, 
+				telno varchar(20) NOT NULL, 
+				domainame varchar(100) NOT NULL, 
+				address text NOT NULL, 
+				title varchar(28) NOT NULL
+			);";
 			$dbcretbl->exec($sql);
 			echo "Database Table created successfully: CONFIG<br>";
 		} catch(PDOException $e) {
